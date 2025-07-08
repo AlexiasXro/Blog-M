@@ -1,15 +1,20 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
 }
 h1{
     font-size: 5em;
     color: #a39;
+    text-align: center;
 }
 p{
     font-size: 1.6em
 }
 .box1{
-    background-color: #e92;
+    align-self: center;
+    background-color: #fbc272;
     border: 1px solid transparent;
     border-radius: 45px;
+    padding:30px;
+    max-width: max-content;
 }

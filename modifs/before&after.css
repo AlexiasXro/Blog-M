@@ -1,0 +1,81 @@
+body{
+    background-color: #111;
+    font-family: poppins, sans-serif;
+    color: #eee;
+    margin: 2rem;
+}
+h1{
+    color:#eee;
+    font-size: 2.5em;
+    position: relative;
+    width: max-content;
+}
+p{
+    box-sizing: border-box;
+    position: relative;
+    margin: 2rem;
+    justify-content: center;
+}
+
+blockquote {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 4px solid #eee;
+    display:inline-flex;
+
+} 
+
+
+h1::after{
+    content: '';
+    background: linear-gradient(to right, #93e, #65f );
+    height: 5px;
+    width: 100%;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 200ms;
+}
+h1:hover::after{
+    transition: 300ms;
+    width: 5%;
+}
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    padding: 1em 2.5em;
+    color: #eee;
+    background: transparent;
+    border: 3px solid transparent;
+    border-radius: 45px;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+
+    /* Borde degradado usando background compuesto */
+    background-image: 
+      linear-gradient(#222, #222), /* fondo interior blanco */
+      linear-gradient(to right, #93e,#65f); /* borde */
+
+    background-origin: border-box;    
+    background-clip: padding-box, border-box; 
+    
+    transition: all 500ms ease;
+}
+
+.button:hover {
+    color: white;
+    background-image: 
+        linear-gradient(to right, #93e,#65f);
+}
