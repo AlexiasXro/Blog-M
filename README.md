@@ -9,6 +9,7 @@
 - 📄 Estructura de templates (base.html, etc.)
 - 🔒 Autenticación/autores
 - 📂 Deploy en producción (cuando llegue el momento)
+- cambios
 
 ### Tecnologias usada
 - Python 3.13.4
